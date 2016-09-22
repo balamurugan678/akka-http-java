@@ -1,4 +1,4 @@
-package nl.ordina.java.akkahttp;
+package com.eurostar.after.service;
 
 import akka.actor.ActorSystem;
 import akka.http.javadsl.marshallers.jackson.Jackson;
@@ -35,7 +35,6 @@ public class Server extends HttpApp {
   @Override
   public Route createRoute() {
 
-        /* Dezelfde instantie moet gebruikt worden voor het opvragen van een PathMatcher! */
     PathMatcher<UUID> uuidExtractor = uuid();
 
     return handleExceptions(e -> {

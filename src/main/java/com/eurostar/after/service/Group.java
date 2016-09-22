@@ -1,4 +1,4 @@
-package nl.ordina.java.akkahttp;
+package com.eurostar.after.service;
 
 import java.util.UUID;
 
